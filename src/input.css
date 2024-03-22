@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  --width: 300px;
+  --timing: 2s;
+  border: 0;
+
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgba(222, 218, 4, 0.719);
+  transition: all 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(250, 82, 82) 16.65%,
+    rgb(190, 75, 219) 16.65%,
+    rgb(190, 75, 219) 33.3%,
+    rgb(76, 110, 245) 33.3%,
+    rgb(76, 110, 245) 49.95%,
+    rgb(64, 192, 87) 49.95%,
+    rgb(64, 192, 87) 66.6%,
+    rgb(250, 176, 5) 66.6%,
+    rgb(250, 176, 5) 83.25%,
+    rgb(253, 126, 20) 83.25%,
+    rgb(253, 126, 20) 100%,
+    rgb(250, 82, 82) 100%
+  );
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
+
+.sticky-note {
+  position: relative;
+  min-height: 50px;
+  min-width: 200px;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: black;
+  text-align: start;
+  flex-grow: 2;
+}
+p {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: oblique;
+  font-size: 1.5rem;
+  padding: 7% 0;
+  text-wrap: wrap;
+  text-align: center;
+}
+.clbtn {
+  background-color: rgba(253, 1, 1, 0.393);
+  right: 0;
+  margin-bottom: 2px;
+  position: absolute;
+  width: 50px;
+  display: block;
+}
+
+h1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(190, 75, 219),
+    rgb(76, 110, 245),
+    rgb(64, 192, 87),
+    rgb(250, 176, 5),
+    rgb(253, 126, 20),
+    rgb(250, 82, 82)
+  );
+
+  transform: scale(1.1) translateY(-1px);
+}
