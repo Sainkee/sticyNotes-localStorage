@@ -94,8 +94,10 @@ function displayData() {
   data.forEach((note) => {
     let div = document.createElement("div");
     div.innerHTML = `
-    <button id ="${note.id}" class ="clbtn bg:red-500 hover:bg-red-600 rounded-l-sm inline-block text-white">X</button>
-    <p   class = "noteContent outline-none py-1 md:py-[6%] "contenteditable="true">${note.msg}</p> `;
+    <button id ="${
+      note.id
+    }" class ="clbtn bg:red-500 hover:bg-red-600 rounded-l-sm inline-block text-white">X</button>
+    <p   class = "noteContent outline-none py-1 md:py-[6%] "contenteditable="true">${note.msg.trim()}</p> `;
     div.style.background = `linear-gradient(to right, white,${randcolor(
       colorBucket
     )})`;

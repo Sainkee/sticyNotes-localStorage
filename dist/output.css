@@ -647,6 +647,10 @@ video {
   height: 61vh;
 }
 
+.h-\[65vh\] {
+  height: 65vh;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -661,6 +665,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .transform {
