@@ -639,6 +639,10 @@ video {
   height: 60vh;
 }
 
+.h-\[71vh\] {
+  height: 71vh;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -933,6 +937,14 @@ h1 {
 
   .md\:h-\[89vh\] {
     height: 89vh;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .md\:max-h-\[89vh\] {
+    max-height: 89vh;
   }
 
   .md\:w-3\/6 {
